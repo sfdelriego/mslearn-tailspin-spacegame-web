@@ -13,7 +13,7 @@ RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 # [Optional] Install zsh
 ARG INSTALL_ZSH="true"
 # [Optional] Upgrade OS packages to their latest versions
-ARG UPGRADE_PACKAGES="false"
+ARG UPGRADE_PACKAGES="true"
 
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your own dependencies.
 ARG USERNAME=vscode
